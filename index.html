@@ -4,17 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiranjot Kaur | Software Developer & Digital Transformation Specialist</title>
+    
+    <!-- Google Site Verification Tag -->
+    <meta name="google-site-verification" content="YOUR_SEARCH_CONSOLE_VERIFICATION_STRING_HERE" />
+
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 40px; background-color: #f4f4f9; color: #333; text-align: center; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #0077b5; margin-bottom: 5px; }
-        h2 { font-weight: normal; color: #666; margin-top: 0; font-size: 1.1rem; }
-        p { font-size: 1.1rem; }
-        .btn { display: inline-block; background: #0077b5; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; font-weight: bold; }
-        .btn:hover { background: #005582; }
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --accent-hover: #1f6feb;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        /* Profile Box Layout */
+        .profile-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+        }
+
+        .profile-badge {
+            display: inline-block;
+            background: rgba(88, 166, 255, 0.1);
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0 0 10px 0;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin: 0 0 25px 0;
+        }
+
+        p.bio {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: var(--text-main);
+        }
+
+        /* Section Layouts */
+        .section-title {
+            font-size: 1.25rem;
+            color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .exp-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            text-align: left;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .exp-item:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .exp-role {
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+
+        .exp-company {
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        /* Personalized Buttons Container */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--accent);
+            color: #ffffff;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--border-color);
+            color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            .exp-header { flex-direction: column; gap: 5px; }
+            .container { padding: 0 15px; margin: 30px auto; }
+            .profile-card { padding: 30px 20px; }
+        }
     </style>
 
-    <!-- Google Structured Data (Schema Markup) -->
+    <!-- Search Engine Schema Graph Mapping -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -29,7 +180,7 @@
       "jobTitle": "Digital Transformation Specialist & Software Developer",
       "url": "https://github.io",
       "sameAs": [
-        "https://linkedin.com",
+        "https://in.linkedin.com/in/kiranjotkaurjagdev",
         "https://wikidata.org"
       ]
     }
@@ -38,12 +189,46 @@
 <body>
 
 <div class="container">
-    <h1>Kiranjot Kaur (Jagdev)</h1>
-    <h2>Software Developer & Digital Transformation Specialist</h2>
-    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-    <p>Welcome to my professional profile. I specialize in enterprise digital transformation, software engineering architectures, and cloud solution delivery platforms.</p>
     
-    <a href="https://linkedin.com" class="btn" target="_blank">Connect on LinkedIn</a>
+    <!-- Profile Card Block -->
+    <div class="profile-card">
+        <span class="profile-badge">TECH & ENTERPRISE SYSTEMS</span>
+        <h1>Kiranjot Kaur (Jagdev)</h1>
+        <h2>Digital Transformation Specialist & Software Developer</h2>
+        <p class="bio">
+            Software engineer focused on architecting agile enterprise business platforms, scaling cloud infrastructure configurations, and orchestrating full-stack web solutions.
+        </p>
+        
+        <!-- Fully Personalized Navigation Controls -->
+        <div class="btn-container">
+            <a href="https://in.linkedin.com/in/kiranjotkaurjagdev" class="btn" target="_blank">Connect via LinkedIn</a>
+            <a href="https://wikidata.org" class="btn btn-secondary" target="_blank">View Wikidata Authority Record</a>
+        </div>
+    </div>
+
+    <!-- Core Capability Map -->
+    <div class="section-title">Core Capability Map</div>
+    
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="exp-role">Enterprise Software Engineering</span>
+            <span class="exp-company">Full-Stack Implementation</span>
+        </div>
+        <p style="margin: 0; color: var(--text-muted); font-size: 0.95rem;">
+            Building maintainable web applications, organizing structured database systems, and optimizing service integration pipelines.
+        </p>
+    </div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="exp-role">Digital Transformation Frameworks</span>
+            <span class="exp-company">ERP Delivery Systems</span>
+        </div>
+        <p style="margin: 0; color: var(--text-muted); font-size: 0.95rem;">
+            Migrating traditional information storage into automated workflows, managing cloud deployments, and structuring stable API ecosystems.
+        </p>
+    </div>
+
 </div>
 
 </body>
